@@ -15,7 +15,15 @@ function addpoints(team, points) {
   scores[team] += points;
 
   counters[team].textContent = scores[team];
+}
 
-  console.log(team);
-  console.log(counters[team]);
+//function to reset a new game
+function newGame() {
+  (scores[home], (scores[guest] = 0));
+
+  counters.guest.textContent = scores[guest];
+  counters.home.textContent = scores[home];
+
+  // counters[guest].textContent = 0;
+  // counters[home].textContent = 0;
 }
